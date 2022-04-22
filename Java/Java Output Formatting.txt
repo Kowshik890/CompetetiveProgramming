@@ -1,0 +1,39 @@
+Link: https://www.hackerrank.com/challenges/java-output-formatting/problem
+
+Code: 
+
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            String concate;
+            String totLen = "               ";
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++)
+            {
+                String s1=sc.next();
+                int x=sc.nextInt();
+                int len = s1.length();
+                for(int j=0;j<15-len;j++) {
+                    s1 = s1+" ";
+                }
+                //Complete this line
+                if(x<100 && x!=0) {
+                    concate = "0"+Integer.toString(x);
+                } else if (x==0) {
+                    concate = "000";
+                } else {
+                    concate = Integer.toString(x);
+                }
+                System.out.println(s1 + concate);
+            }
+            System.out.println("================================");
+
+    }
+}
+
+
+
+

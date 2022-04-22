@@ -1,0 +1,35 @@
+Link: https://www.hackerrank.com/challenges/java-loops/problem
+
+Code: 
+
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh){
+        
+        
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            int val = 0, val1 = 0, sequence=1;
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            while(n != 0) { 
+                if(sequence ==1) {
+                    val = a + sequence * b;
+                } else {
+                    val = sequence * b;
+                }
+                val1 = val1 + val;
+                sequence*=2;
+                n-=1;
+                System.out.print(val1);
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+        in.close();
+    }
+}
