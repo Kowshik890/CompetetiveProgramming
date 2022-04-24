@@ -1,0 +1,61 @@
+Link: https://www.hackerrank.com/challenges/java-date-and-time/problem
+
+Code: 
+
+import java.io.*;
+import java.util.*;
+
+public class HackerRankProblemSolution {
+
+
+    public static String findDay(int month, int day, int year) {
+        Date date = new GregorianCalendar(year, month-1, day).getTime();
+        String tempDay = date.toString();
+        String[] splitDay = tempDay.split(" ");
+        String[] days = {"Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"};
+        boolean areSat = splitDay[0].equals(days[0]);
+        boolean areSun = splitDay[0].equals(days[1]);
+        boolean areMon = splitDay[0].equals(days[2]);
+        boolean areTue = splitDay[0].equals(days[3]);
+        boolean areWed = splitDay[0].equals(days[4]);
+        boolean areThu = splitDay[0].equals(days[5]);
+        boolean areFri = splitDay[0].equals(days[6]);
+        String S = "";
+        if (areSat) {
+            S = "SATURDAY";
+        }
+        if (areSun) {
+            S = "SUNDAY";
+        }
+        if (areMon) {
+            S = "MONDAY";
+        }
+        if (areTue) {
+            S = "TUESDAY";
+        }
+        if (areWed) {
+            S = "WEDNESDAY";
+        }
+        if (areThu) {
+            S = "THURSDAY";
+        }
+        if (areFri) {
+            S = "FRIDAY";
+        }
+        return S;
+    }
+
+    public static void main(String[] args) throws IOException {
+        Scanner scan = new Scanner(System.in);
+        int month = Integer.parseInt(scan.nextLine());
+
+        int day = Integer.parseInt(scan.nextLine());
+
+        int year = Integer.parseInt(scan.nextLine());
+
+        String res = HackerRankProblemSolution.findDay(month, day, year);
+        System.out.println(res);
+    }
+
+}
+
