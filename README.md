@@ -16,3 +16,9 @@
 **7.** [Java String](https://www.hackerrank.com/challenges/java-strings-introduction/problem)
 
 **8.** [Java Substring Comparisons](https://www.hackerrank.com/challenges/java-string-compare/problem)
+
+**9.** [Java Anagrams](https://www.hackerrank.com/challenges/java-anagrams/problem)
+
+**10.** [Java String Reverse](https://www.hackerrank.com/challenges/java-string-reverse/problem)
+
+**11.** [Java Currency Formatter](https://www.hackerrank.com/challenges/java-currency-formatter/problem)
