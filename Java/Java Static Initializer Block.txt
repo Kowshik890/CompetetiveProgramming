@@ -2,7 +2,6 @@ Link: https://www.hackerrank.com/challenges/java-static-initializer-block/proble
 
 Code:
 
-
 import java.io.*;
 import java.util.*;
 
