@@ -22,3 +22,5 @@
 **10.** [Java String Reverse](https://www.hackerrank.com/challenges/java-string-reverse/problem)
 
 **11.** [Java Currency Formatter](https://www.hackerrank.com/challenges/java-currency-formatter/problem)
+
+**12.** [Java Static Initializer Block](https://www.hackerrank.com/challenges/java-static-initializer-block/problem)
